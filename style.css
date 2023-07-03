@@ -1,0 +1,110 @@
+::after,::before,*,form{
+    margin:0;
+    box-sizing:border-box;
+}
+
+a{text-decoration: none;}
+button{cursor:pointer;}
+ul{list-style-type: none; padding:0}
+img{vertical-align: bottom;}
+:disabled{cursor:not-allowed;}
+
+html{font-size: 15px;}
+
+@font-face {
+    font-family: proxima;
+    src: url('font/Proxima-Nova-Bold.woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: proxima;
+    src: url('font/Proxima-Nova-Regular.woff2');
+    font-weight:400;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: proxima;
+    src: url('font/Proxima-Nova-Thin.woff2');
+    font-weight:100;
+    font-display:swap;
+}
+
+body{font:400 16px 'proxima',sans-serif;}
+.container{max-width:1200px;margin: auto;padding: 0 1rem;}
+.row{display:flex;flex: row wrap;margin:0 -1rem;}
+.flex{display: flex; gap:1rem;}
+
+
+[class^="col-"]{flex:1 0 auto;padding: 0 1rem;}
+
+.col-1{ 
+    flex-basis: 8.3363%;
+    max-width: 8.3336%;
+}
+.col-2{ 
+    flex-basis: 16.666%;
+    max-width: 16.666%;
+}
+.col-3{ 
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.col-4{ 
+    flex-basis: 33.3336%;
+    max-width: 33.3336%;
+}
+.col-5{ 
+    flex-basis: 41.666%;
+    max-width: 41.666%;
+}
+.col-6{ 
+    flex-basis:50%;
+    max-width: 50%;
+}
+.col-7{ 
+    flex-basis:58.3336%;
+    max-width: 58.3336%;
+}
+.col-8{ 
+    flex-basis:66.666%;
+    max-width: 66.666%;
+}
+.col-9{ 
+    flex-basis:75%;
+    max-width: 75%;
+}
+.col-10{ 
+    flex-basis:83.3336%;
+    max-width: 83.3336%;
+}
+.col-11{ 
+    flex-basis:91.666%;
+    max-width: 91.6666%;
+}
+.col-12{ 
+    flex-basis:100%;
+    max-width: 100%;
+}
+
+.bg-red{background: #f38181;}
+.bg-white{background-color: #fff;}
+.flex{display:flex}
+.align-center{ align-items: center;}
+.justify-right{ justify-content: right;}
+.justify-space-bet{ justify-content: space-between;}
+.text-center{text-align: center;}
+.float-right{float: right;}
+.float-left{float: left;}
+.bold{font-weight: 700;font-size: 30px;}
+
+.wrap-1{background-color: antiquewhite;}
+header .flex span,header .flex h1{line-height: 5rem;}
+header .flex span{font-size: 4rem;}
+
+.wrap-2{text-align: center;}
+#input_text, #output_text{display: block; width: 100%;resize:none;margin: 20px 0;border-radius: 20%; padding:2rem;border: 0.2rem groove #555; outline: none;}
+select{margin: 1rem auto;display: block;padding: 1rem;background-color:beige; outline: none; border: 1px solid #444; border-radius: 10px;}
+button{padding: 10px; display: block; margin: auto;}
